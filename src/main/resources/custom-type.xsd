@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://stanislav.hlova/shoe-shop"
+           xmlns:tns="http://stanislav.hlova/shoe-shop"
+           elementFormDefault="qualified">
+    <xs:simpleType name="countType">
+        <xs:restriction base="xs:unsignedInt">
+            <xs:minExclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="fractionalDecimal">
+        <xs:restriction base="xs:decimal">
+            <xs:fractionDigits value="2"/>
+            <xs:totalDigits value="20"/>
+            <xs:minInclusive value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="currencyType">
+        <xs:simpleContent>
+            <xs:extension base="tns:fractionalDecimal">
+                <xs:attribute name="currency" type="xs:string" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+
+</xs:schema>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://stanislav.hlova/shoe-shop/shoe"
+           xmlns:tns="http://stanislav.hlova/shoe-shop/shoe"
+           xmlns:base="http://stanislav.hlova/shoe-shop"
+           elementFormDefault="qualified">
+
+    <xs:import namespace="http://stanislav.hlova/shoe-shop" schemaLocation="custom-type.xsd"/>
+
+    <xs:element name="shoe">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="tns:manufacturer" />
+                <xs:element name="name">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:minLength value="3"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="size">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:decimal">
+                            <xs:minExclusive value="0"/>
+                            <xs:maxExclusive value="100"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="productMaterial" type="xs:string" />
+                <xs:element name="model">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:minLength value="3"/>
+                            <xs:maxLength value="60"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="article">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:length value="16"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="price">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="base:currencyType"/>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+
+            <xs:attribute name="id" type="xs:unsignedLong" use="required" />
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="manufacturer">
+        <xs:complexType>
+            <xs:all>
+                <xs:element name="name" type="xs:string" />
+                <xs:element name="address" type="xs:string" />
+            </xs:all>
+            <xs:attribute name="id" type="xs:unsignedLong" use="required" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
