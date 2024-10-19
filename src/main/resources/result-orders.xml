@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<tns:orders xmlns:tns="http://stanislav.hlova/shoe-shop/orders" xmlns:sh="http://stanislav.hlova/shoe-shop/shoe" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://stanislav.hlova/shoe-shop/orders orders.xsd">
+    <order id="1" xmlns="http://stanislav.hlova/shoe-shop/orders">
+        <orderItems>
+            <orderItem id="1">
+                <sh:shoe id="1">
+                    <sh:manufacturer id="1">
+                        <sh:name>Київська фабрика взуття</sh:name>
+                        <sh:address>Київ, вул. Вокзальна, 46</sh:address>
+                    </sh:manufacturer>
+                    <sh:name>Темні туфлі</sh:name>
+                    <sh:size>36.5</sh:size>
+                    <sh:productMaterial>Замінювач кожі</sh:productMaterial>
+                    <sh:model>NKR432222</sh:model>
+                    <sh:article>BSE0000134567890</sh:article>
+                    <sh:price currency="UAH">234.45</sh:price>
+                </sh:shoe>
+                <count>2</count>
+                <discount currency="UAH">30.00</discount>
+                <total currency="UAH">438.90</total>
+            </orderItem>
+        </orderItems>
+        <buyer id="1">
+            <email>buyer1@example.com</email>
+            <lastName>Василенко</lastName>
+            <firstName>Василь</firstName>
+            <middleName>Васильович</middleName>
+            <telephoneNumber>+380123456789</telephoneNumber>
+        </buyer>
+        <receiver id="34">
+            <email>receiver1@example.com</email>
+            <lastName>Петренко</lastName>
+            <firstName>Петро</firstName>
+            <middleName>Петрович</middleName>
+            <telephoneNumber>+380987654321</telephoneNumber>
+        </receiver>
+        <delivery>
+            <status>Доставляється</status>
+            <delivery-service>ТОВ "Нова пошта"</delivery-service>
+            <address>м. Полтава, вул. Європейська, 40</address>
+            <departmentNumber>34-А</departmentNumber>
+        </delivery>
+        <status>На доставці</status>
+    </order>
+    <order id="2" xmlns="http://stanislav.hlova/shoe-shop/orders">
+        <orderItems>
+            <orderItem id="2">
+                <sh:shoe id="2">
+                    <sh:manufacturer id="2">
+                        <sh:name>Львівська фабрика взуття</sh:name>
+                        <sh:address>Львів, вул. Грушевського, 1</sh:address>
+                    </sh:manufacturer>
+                    <sh:name>Світлі черевики</sh:name>
+                    <sh:size>40.0</sh:size>
+                    <sh:productMaterial>Натуральна шкіра</sh:productMaterial>
+                    <sh:model>ШКД123456</sh:model>
+                    <sh:article>BSE0000134567891</sh:article>
+                    <sh:price currency="UAH">456.78</sh:price>
+                </sh:shoe>
+                <count>1</count>
+                <total currency="UAH">456.78</total>
+            </orderItem>
+            <orderItem id="3">
+                <sh:shoe id="3">
+                    <sh:manufacturer id="2">
+                        <sh:name>Львівська фабрика взуття</sh:name>
+                        <sh:address>Львів, вул. Грушевського, 1</sh:address>
+                    </sh:manufacturer>
+                    <sh:name>Темні кросівки</sh:name>
+                    <sh:size>41.0</sh:size>
+                    <sh:productMaterial>Замінювач кожі</sh:productMaterial>
+                    <sh:model>КРС987654</sh:model>
+                    <sh:article>BSE0000134567892</sh:article>
+                    <sh:price currency="UAH">350.00</sh:price>
+                </sh:shoe>
+                <count>2</count>
+                <total currency="UAH">700.00</total>
+            </orderItem>
+        </orderItems>
+        <buyer id="2">
+            <email>buyer2@example.com</email>
+            <lastName>Іваненко</lastName>
+            <firstName>Іван</firstName>
+            <middleName>Іванович</middleName>
+            <telephoneNumber>+380123456780</telephoneNumber>
+        </buyer>
+        <receiver id="35">
+            <email>receiver2@example.com</email>
+            <lastName>Ковальчук</lastName>
+            <firstName>Олег</firstName>
+            <middleName>Олегович</middleName>
+            <telephoneNumber>+380987654322</telephoneNumber>
+        </receiver>
+        <status>Скасовано</status>
+    </order>
+    <order id="3" xmlns="http://stanislav.hlova/shoe-shop/orders">
+        <orderItems>
+            <orderItem id="4">
+                <sh:shoe id="4">
+                    <sh:manufacturer id="3">
+                        <sh:name>Одеська фабрика взуття</sh:name>
+                        <sh:address>Одеса, вул. Приморська, 5</sh:address>
+                    </sh:manufacturer>
+                    <sh:name>Спортивні кросівки</sh:name>
+                    <sh:size>42.0</sh:size>
+                    <sh:productMaterial>Тканина</sh:productMaterial>
+                    <sh:model>СПК876543</sh:model>
+                    <sh:article>BSE0000134567893</sh:article>
+                    <sh:price currency="UAH">500.00</sh:price>
+                </sh:shoe>
+                <count>4</count>
+                <total currency="UAH">2000.00</total>
+            </orderItem>
+        </orderItems>
+        <buyer id="3">
+            <email>buyer3@example.com</email>
+            <lastName>Шевченко</lastName>
+            <firstName>Тарас</firstName>
+            <middleName>Григорович</middleName>
+            <telephoneNumber>+380123456781</telephoneNumber>
+        </buyer>
+        <receiver id="36">
+            <email>receiver3@example.com</email>
+            <lastName>Сидоренко</lastName>
+            <firstName>Оксана</firstName>
+            <middleName>Сергіївна</middleName>
+            <telephoneNumber>+380987654323</telephoneNumber>
+        </receiver>
+        <delivery>
+            <status>Повертається</status>
+            <delivery-service>ТОВ "Нова пошта"</delivery-service>
+            <address>м. Вінниця, вул. Соборна, 20</address>
+            <departmentNumber>10-А</departmentNumber>
+        </delivery>
+        <status>На доставці</status>
+    </order>
+    <order id="4" xmlns="http://stanislav.hlova/shoe-shop/orders">
+        <orderItems>
+            <orderItem id="5">
+                <sh:shoe id="5">
+                    <sh:manufacturer id="4">
+                        <sh:name>Дніпровська фабрика взуття</sh:name>
+                        <sh:address>Дніпро, вул. Дзержинського, 8</sh:address>
+                    </sh:manufacturer>
+                    <sh:name>Літні сандалі</sh:name>
+                    <sh:size>39.0</sh:size>
+                    <sh:productMaterial>Замінювач кожі</sh:productMaterial>
+                    <sh:model>СДЛ543216</sh:model>
+                    <sh:article>BSE0000134567894</sh:article>
+                    <sh:price currency="UAH">300.00</sh:price>
+                </sh:shoe>
+                <count>1</count>
+                <total currency="UAH">300.00</total>
+            </orderItem>
+            <orderItem id="6">
+                <sh:shoe id="6">
+                    <sh:manufacturer id="4">
+                        <sh:name>Дніпровська фабрика взуття</sh:name>
+                        <sh:address>Дніпро, вул. Дзержинського, 8</sh:address>
+                    </sh:manufacturer>
+                    <sh:name>Спортивні кросівки</sh:name>
+                    <sh:size>43.0</sh:size>
+                    <sh:productMaterial>Натуральна шкіра</sh:productMaterial>
+                    <sh:model>КРС321654</sh:model>
+                    <sh:article>BSE0000134567895</sh:article>
+                    <sh:price currency="UAH">650.00</sh:price>
+                </sh:shoe>
+                <count>2</count>
+                <total currency="UAH">1300.00</total>
+            </orderItem>
+        </orderItems>
+        <buyer id="4">
+            <email>buyer4@example.com</email>
+            <lastName>Коваленко</lastName>
+            <firstName>Юрій</firstName>
+            <middleName>Олександрович</middleName>
+            <telephoneNumber>+380123456782</telephoneNumber>
+        </buyer>
+        <receiver id="37">
+            <email>receiver4@example.com</email>
+            <lastName>Ткаченко</lastName>
+            <firstName>Наталя</firstName>
+            <middleName>Валеріївна</middleName>
+            <telephoneNumber>+380987654324</telephoneNumber>
+        </receiver>
+        <delivery>
+            <status>Доставлено</status>
+            <delivery-service>ТОВ "Укрпошта"</delivery-service>
+            <address>м. Запоріжжя, вул. Запорізька, 12</address>
+            <departmentNumber>5-А</departmentNumber>
+        </delivery>
+        <status>Виконано</status>
+    </order>
+    <order id="5" xmlns="http://stanislav.hlova/shoe-shop/orders">
+        <orderItems>
+            <orderItem id="7">
+                <sh:shoe id="7">
+                    <sh:manufacturer id="5">
+                        <sh:name>Харківська фабрика взуття</sh:name>
+                        <sh:address>Харків, вул. Сумська, 15</sh:address>
+                    </sh:manufacturer>
+                    <sh:name>Зимові черевики</sh:name>
+                    <sh:size>44.0</sh:size>
+                    <sh:productMaterial>Замінювач шкіри</sh:productMaterial>
+                    <sh:model>ЗЧР654321</sh:model>
+                    <sh:article>BSE0000134567896</sh:article>
+                    <sh:price currency="UAH">800.00</sh:price>
+                </sh:shoe>
+                <count>1</count>
+                <total currency="UAH">800.00</total>
+            </orderItem>
+        </orderItems>
+        <buyer id="5">
+            <email>buyer5@example.com</email>
+            <lastName>Мельник</lastName>
+            <firstName>Андрій</firstName>
+            <middleName>Володимирович</middleName>
+            <telephoneNumber>+380123456783</telephoneNumber>
+        </buyer>
+        <receiver id="38">
+            <email>receiver5@example.com</email>
+            <lastName>Гнатенко</lastName>
+            <firstName>Сергій</firstName>
+            <middleName>Сергійович</middleName>
+            <telephoneNumber>+380987654325</telephoneNumber>
+        </receiver>
+        <delivery>
+            <status>Пакується</status>
+            <delivery-service>ТОВ "Нова пошта"</delivery-service>
+            <address>м. Чернігів, вул. Козацька, 50</address>
+            <departmentNumber>20-А</departmentNumber>
+        </delivery>
+        <status>В обробці</status>
+    </order>
+</tns:orders>

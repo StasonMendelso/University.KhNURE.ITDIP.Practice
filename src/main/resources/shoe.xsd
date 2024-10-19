@@ -6,7 +6,11 @@
            elementFormDefault="qualified">
 
     <xs:import namespace="http://stanislav.hlova/shoe-shop" schemaLocation="custom-type.xsd"/>
-
+    <xs:complexType name="Price">
+        <xs:simpleContent>
+            <xs:extension base="base:currencyType"/>
+        </xs:simpleContent>
+    </xs:complexType>
     <xs:element name="shoe">
         <xs:complexType>
             <xs:sequence>
@@ -42,13 +46,7 @@
                         </xs:restriction>
                     </xs:simpleType>
                 </xs:element>
-                <xs:element name="price">
-                    <xs:complexType>
-                        <xs:simpleContent>
-                            <xs:extension base="base:currencyType"/>
-                        </xs:simpleContent>
-                    </xs:complexType>
-                </xs:element>
+                <xs:element name="price" type="tns:Price"/>
             </xs:sequence>
 
             <xs:attribute name="id" type="xs:unsignedLong" use="required" />

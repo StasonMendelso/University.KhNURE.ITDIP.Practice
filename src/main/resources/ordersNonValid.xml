@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<tns:orders xmlns:tns="http://stanislav.hlova/shoe-shop/orders"
+			xmlns:sh="http://stanislav.hlova/shoe-shop/shoe"
+			xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			xsi:schemaLocation="http://stanislav.hlova/shoe-shop/orders orders.xsd">
+	<tns:order id="1">
+		<tns:buyer id="1">
+			<tns:email>buyer1@example.com</tns:email>
+			<tns:lastName>Василенко</tns:lastName>
+			<tns:firstName>Василь</tns:firstName>
+			<tns:middleName>Васильович</tns:middleName>
+			<tns:telephoneNumber>+380123456789</tns:telephoneNumber>
+		</tns:buyer>
+		<tns:receiver id="34">
+			<tns:email>receiver1@example.com</tns:email>
+			<tns:lastName>Петренко</tns:lastName>
+			<tns:firstName>Петро</tns:firstName>
+			<tns:middleName>Петрович</tns:middleName>
+			<tns:telephoneNumber>+380987654321</tns:telephoneNumber>
+		</tns:receiver>
+		<tns:delivery>
+			<tns:address>м. Полтава, вул. Європейська, 40</tns:address>
+			<tns:departmentNumber>34-А</tns:departmentNumber>
+			<tns:delivery-service>ТОВ "Нова пошта"</tns:delivery-service>
+			<tns:status>Доставляється</tns:status>
+		</tns:delivery>
+		<tns:status>На доставці</tns:status>
+	</tns:order>
+
+	<tns:order id="2">
+			<tns:orderItem id="2">
+				<sh:shoe id="2">
+					<sh:manufacturer id="2">
+						<sh:name>Львівська фабрика взуття</sh:name>
+						<sh:address>Львів, вул. Грушевського, 1</sh:address>
+					</sh:manufacturer>
+					<sh:name>Світлі черевики</sh:name>
+					<sh:size>40</sh:size>
+					<sh:productMaterial>Натуральна шкіра</sh:productMaterial>
+					<sh:model>ШКД123456</sh:model>
+					<sh:article>BSE0000134567891</sh:article>
+					<sh:price currency="UAH">456.78</sh:price>
+				</sh:shoe>
+				<tns:count>1</tns:count>
+				<tns:total currency="UAH">456.78</tns:total>
+			</tns:orderItem>
+			<tns:orderItem id="3">
+				<sh:shoe id="3">
+					<sh:manufacturer id="2">
+						<sh:name>Львівська фабрика взуття</sh:name>
+						<sh:address>Львів, вул. Грушевського, 1</sh:address>
+					</sh:manufacturer>
+					<sh:name>Темні кросівки</sh:name>
+					<sh:size>41</sh:size>
+					<sh:productMaterial>Замінювач кожі</sh:productMaterial>
+					<sh:model>КРС987654</sh:model>
+					<sh:article>BSE0000134567892</sh:article>
+					<sh:price currency="UAH">350.00</sh:price>
+				</sh:shoe>
+				<tns:count>2</tns:count>
+				<tns:total currency="UAH">700.00</tns:total>
+			</tns:orderItem>
+	</tns:order>
+
+</tns:orders>

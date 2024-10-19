@@ -21,6 +21,13 @@
 		<!-- versions -->
 		<jakarta.jaxb.version>4.0.0</jakarta.jaxb.version>
 		<activation.version>1.1.1</activation.version>
+		<!-- versions -->
+		<jaxb.version>4.0.0</jaxb.version>
+		<jaxb-core.version>4.0.0</jaxb-core.version>
+		<!-- <activation.version>1.1.1</activation.version> -->
+		<activation.version>2.1.2</activation.version>
+		<msv.version>2013.6.1</msv.version>
+		<woodstox.version>6.2.1</woodstox.version>
 	</properties>
 
 	<dependencies>
@@ -50,33 +57,36 @@
   		    <scope>test</scope>
   		</dependency>
 	</dependencies>
-
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.cxf</groupId>
-				<artifactId>cxf-xjc-plugin</artifactId>
-				<version>4.0.0</version>
-				<executions>
-					<execution>
-						<id>xjc</id>
-						<!-- <phase>generate-sources</phase> -->
-						<goals>
-							<!-- Output to ${project.build.directory}/generated/src/main/java -->
-							<goal>xsdtojava</goal>
-						</goals>
-						<configuration>
-							<xsdOptions>
-								<xsdOption>
-									<xsd>${basedir}/src/main/resources/orders.xsd</xsd>
-									<!-- <packagename>your.package</packagename> -->
-								</xsdOption>
-							</xsdOptions>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-	</build>
-
+	<profiles>
+		<profile>
+			<id>xml-to-class</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.cxf</groupId>
+						<artifactId>cxf-xjc-plugin</artifactId>
+						<version>4.0.0</version>
+						<executions>
+							<execution>
+								<id>xjc</id>
+								<!--						<phase>generate-sources</phase>-->
+								<goals>
+									<!-- Output to ${project.build.directory}/generated/src/main/java -->
+									<goal>xsdtojava</goal>
+								</goals>
+								<configuration>
+									<xsdOptions>
+										<xsdOption>
+											<xsd>${basedir}/src/main/resources/orders.xsd</xsd>
+											<!-- <packagename>your.package</packagename> -->
+										</xsdOption>
+									</xsdOptions>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 </project>

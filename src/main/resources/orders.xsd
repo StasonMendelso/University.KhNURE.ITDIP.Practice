@@ -9,6 +9,24 @@
 	<xs:import namespace="http://stanislav.hlova/shoe-shop" schemaLocation="custom-type.xsd"/>
 	<xs:import namespace="http://stanislav.hlova/shoe-shop/shoe" schemaLocation="shoe.xsd"/>
 
+	<xs:complexType name="Count">
+		<xs:simpleContent>
+			<xs:extension base="base:countType">
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="Discount">
+		<xs:simpleContent>
+			<xs:restriction base="base:currencyType">
+				<xs:maxInclusive value="1000"/>
+			</xs:restriction>
+		</xs:simpleContent>
+	</xs:complexType>
+	<xs:complexType name="Total">
+		<xs:simpleContent>
+			<xs:extension base="base:currencyType"/>
+		</xs:simpleContent>
+	</xs:complexType>
 	<xs:element name="orders">
 		<xs:complexType>
 			<xs:sequence>
@@ -32,19 +50,7 @@
 				<xs:element ref="tns:buyer" />
 				<xs:element ref="tns:receiver" />
 				<xs:element ref="tns:delivery" minOccurs="0"/>
-				<xs:element name="status">
-					<xs:simpleType>
-						<xs:restriction base="xs:string">
-							<xs:enumeration value="Очікує розгляду" />
-							<xs:enumeration value="Підтверджено" />
-							<xs:enumeration value="Відхилено" />
-							<xs:enumeration value="Скасовано" />
-							<xs:enumeration value="Виконано" />
-							<xs:enumeration value="В обробці" />
-							<xs:enumeration value="На доставці" />
-						</xs:restriction>
-					</xs:simpleType>
-				</xs:element>
+				<xs:element name="status" type="tns:OrderStatus"/>
 			</xs:sequence>
 			<xs:attribute name="id" type="xs:unsignedLong" use="required" />
 		</xs:complexType>
@@ -56,35 +62,24 @@
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
-
+	<xs:simpleType name="OrderStatus">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Очікує розгляду" />
+			<xs:enumeration value="Підтверджено" />
+			<xs:enumeration value="Відхилено" />
+			<xs:enumeration value="Скасовано" />
+			<xs:enumeration value="Виконано" />
+			<xs:enumeration value="В обробці" />
+			<xs:enumeration value="На доставці" />
+		</xs:restriction>
+	</xs:simpleType>
 	<xs:element name="orderItem">
 		<xs:complexType>
 			<xs:sequence>
 				<xs:element ref="sh:shoe" />
-				<xs:element name="count">
-					<xs:complexType>
-						<xs:simpleContent>
-							<xs:extension base="base:countType">
-							</xs:extension>
-						</xs:simpleContent>
-					</xs:complexType>
-				</xs:element>
-				<xs:element name="discount" minOccurs="0">
-					<xs:complexType>
-						<xs:simpleContent>
-							<xs:restriction base="base:currencyType">
-								<xs:maxInclusive value="1000"/>
-							</xs:restriction>
-						</xs:simpleContent>
-					</xs:complexType>
-				</xs:element>
-				<xs:element name="total">
-					<xs:complexType>
-						<xs:simpleContent>
-							<xs:extension base="base:currencyType"/>
-						</xs:simpleContent>
-					</xs:complexType>
-				</xs:element>
+				<xs:element name="count" type="tns:Count"/>
+				<xs:element name="discount" minOccurs="0" type="tns:Discount"/>
+				<xs:element name="total" type="tns:Total"/>
 			</xs:sequence>
 			<xs:attribute name="id" type="xs:unsignedLong" use="required" />
 		</xs:complexType>
@@ -132,18 +127,17 @@
 				<xs:element name="address" type="xs:string" />
 				<xs:element name="departmentNumber" type="xs:string" />
 				<xs:element name="delivery-service" type="xs:string" />
-				<xs:element name="status">
-					<xs:simpleType>
-						<xs:restriction base="xs:string">
-							<xs:enumeration value="Пакується" />
-							<xs:enumeration value="Доставляється" />
-							<xs:enumeration value="Доставлено" />
-							<xs:enumeration value="Повернуто на склад" />
-							<xs:enumeration value="Повертається" />
-						</xs:restriction>
-					</xs:simpleType>
-				</xs:element>
+				<xs:element name="status" type="tns:DeliveryStatus"/>
 			</xs:all>
 		</xs:complexType>
 	</xs:element>
+	<xs:simpleType name="DeliveryStatus">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Пакується" />
+			<xs:enumeration value="Доставляється" />
+			<xs:enumeration value="Доставлено" />
+			<xs:enumeration value="Повернуто на склад" />
+			<xs:enumeration value="Повертається" />
+		</xs:restriction>
+	</xs:simpleType>
 </xs:schema>
