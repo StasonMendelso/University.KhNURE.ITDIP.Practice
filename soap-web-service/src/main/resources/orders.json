@@ -1,0 +1,108 @@
+[ {
+  "orderItems" : {
+    "orderItem" : [ {
+      "shoe" : {
+        "manufacturer" : {
+          "name" : "Manufacturer 1",
+          "address" : "Address 1",
+          "id" : 81
+        },
+        "name" : "Random Shoe 1",
+        "size" : 37,
+        "productMaterial" : "Material 1",
+        "model" : "Model58690",
+        "article" : "ART4027",
+        "price" : {
+          "value" : 523.41,
+          "currency" : "UAH"
+        },
+        "id" : 297
+      },
+      "count" : {
+        "value" : 2
+      },
+      "discount" : null,
+      "total" : {
+        "value" : 1046.82,
+        "currency" : "UAH"
+      },
+      "id" : 845
+    }, {
+      "shoe" : {
+        "manufacturer" : {
+          "name" : "Manufacturer 2",
+          "address" : "Address 2",
+          "id" : 70
+        },
+        "name" : "Random Shoe 2",
+        "size" : 41,
+        "productMaterial" : "Material 2",
+        "model" : "Model19899",
+        "article" : "ART78112",
+        "price" : {
+          "value" : 480.61,
+          "currency" : "UAH"
+        },
+        "id" : 882
+      },
+      "count" : {
+        "value" : 1
+      },
+      "discount" : null,
+      "total" : {
+        "value" : 480.61,
+        "currency" : "UAH"
+      },
+      "id" : 876
+    }, {
+      "shoe" : {
+        "manufacturer" : {
+          "name" : "Manufacturer 3",
+          "address" : "Address 3",
+          "id" : 39
+        },
+        "name" : "Random Shoe 3",
+        "size" : 36,
+        "productMaterial" : "Material 3",
+        "model" : "Model43309",
+        "article" : "ART64586",
+        "price" : {
+          "value" : 488.37,
+          "currency" : "UAH"
+        },
+        "id" : 548
+      },
+      "count" : {
+        "value" : 2
+      },
+      "discount" : {
+        "value" : 22.82,
+        "currency" : "UAH"
+      },
+      "total" : {
+        "value" : 953.92,
+        "currency" : "UAH"
+      },
+      "id" : 630
+    } ]
+  },
+  "buyer" : {
+    "email" : "buyer72@example.com",
+    "lastName" : "BuyerLast19",
+    "firstName" : "BuyerFirst76",
+    "middleName" : "BuyerMiddle79",
+    "telephoneNumber" : "+38039653673",
+    "id" : 14
+  },
+  "receiver" : {
+    "email" : "receiver69@example.com",
+    "lastName" : "ReceiverLast16",
+    "firstName" : "ReceiverFirst24",
+    "middleName" : "ReceiverMiddle69",
+    "telephoneNumber" : "+38036782804",
+    "id" : 20
+  },
+  "delivery" : null,
+  "status" : "IN_PROCESS",
+  "id" : 1
+} ]
