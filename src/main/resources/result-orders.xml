@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<tns:orders xmlns:tns="http://stanislav.hlova/shoe-shop/orders" xmlns:sh="http://stanislav.hlova/shoe-shop/shoe" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://stanislav.hlova/shoe-shop/orders orders.xsd">
-    <order id="1" xmlns="http://stanislav.hlova/shoe-shop/orders">
-        <orderItems>
-            <orderItem id="1">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tns:orders xmlns:sh="http://stanislav.hlova/shoe-shop/shoe" xmlns:tns="http://stanislav.hlova/shoe-shop/orders" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.com/orders orders.xsd">
+    <tns:order id="1">
+        <tns:orderItems>
+            <tns:orderItem id="1">
                 <sh:shoe id="1">
                     <sh:manufacturer id="1">
                         <sh:name>Київська фабрика взуття</sh:name>
@@ -15,221 +15,221 @@
                     <sh:article>BSE0000134567890</sh:article>
                     <sh:price currency="UAH">234.45</sh:price>
                 </sh:shoe>
-                <count>2</count>
-                <discount currency="UAH">30.00</discount>
-                <total currency="UAH">438.90</total>
-            </orderItem>
-        </orderItems>
-        <buyer id="1">
-            <email>buyer1@example.com</email>
-            <lastName>Василенко</lastName>
-            <firstName>Василь</firstName>
-            <middleName>Васильович</middleName>
-            <telephoneNumber>+380123456789</telephoneNumber>
-        </buyer>
-        <receiver id="34">
-            <email>receiver1@example.com</email>
-            <lastName>Петренко</lastName>
-            <firstName>Петро</firstName>
-            <middleName>Петрович</middleName>
-            <telephoneNumber>+380987654321</telephoneNumber>
-        </receiver>
-        <delivery>
-            <status>Доставляється</status>
-            <delivery-service>ТОВ "Нова пошта"</delivery-service>
-            <address>м. Полтава, вул. Європейська, 40</address>
-            <departmentNumber>34-А</departmentNumber>
-        </delivery>
-        <status>На доставці</status>
-    </order>
-    <order id="2" xmlns="http://stanislav.hlova/shoe-shop/orders">
-        <orderItems>
-            <orderItem id="2">
+                <tns:count>2</tns:count>
+                <tns:discount currency="UAH">30.00</tns:discount>
+                <tns:total currency="UAH">438.90</tns:total>
+            </tns:orderItem>
+        </tns:orderItems>
+        <tns:buyer id="1">
+            <tns:email>buyer1@example.com</tns:email>
+            <tns:lastName>Василенко</tns:lastName>
+            <tns:firstName>Василь</tns:firstName>
+            <tns:middleName>Васильович</tns:middleName>
+            <tns:telephoneNumber>+380123456789</tns:telephoneNumber>
+        </tns:buyer>
+        <tns:receiver id="34">
+            <tns:email>receiver1@example.com</tns:email>
+            <tns:lastName>Петренко</tns:lastName>
+            <tns:firstName>Петро</tns:firstName>
+            <tns:middleName>Петрович</tns:middleName>
+            <tns:telephoneNumber>+380987654321</tns:telephoneNumber>
+        </tns:receiver>
+        <tns:delivery>
+            <tns:address>м. Полтава, вул. Європейська, 40</tns:address>
+            <tns:departmentNumber>34-А</tns:departmentNumber>
+            <tns:delivery-service>ТОВ "Нова пошта"</tns:delivery-service>
+            <tns:status>Доставляється</tns:status>
+        </tns:delivery>
+        <tns:status>На доставці</tns:status>
+    </tns:order>
+    <tns:order id="2">
+        <tns:orderItems>
+            <tns:orderItem id="2">
                 <sh:shoe id="2">
                     <sh:manufacturer id="2">
                         <sh:name>Львівська фабрика взуття</sh:name>
                         <sh:address>Львів, вул. Грушевського, 1</sh:address>
                     </sh:manufacturer>
                     <sh:name>Світлі черевики</sh:name>
-                    <sh:size>40.0</sh:size>
+                    <sh:size>40</sh:size>
                     <sh:productMaterial>Натуральна шкіра</sh:productMaterial>
                     <sh:model>ШКД123456</sh:model>
                     <sh:article>BSE0000134567891</sh:article>
                     <sh:price currency="UAH">456.78</sh:price>
                 </sh:shoe>
-                <count>1</count>
-                <total currency="UAH">456.78</total>
-            </orderItem>
-            <orderItem id="3">
+                <tns:count>1</tns:count>
+                <tns:total currency="UAH">456.78</tns:total>
+            </tns:orderItem>
+            <tns:orderItem id="3">
                 <sh:shoe id="3">
                     <sh:manufacturer id="2">
                         <sh:name>Львівська фабрика взуття</sh:name>
                         <sh:address>Львів, вул. Грушевського, 1</sh:address>
                     </sh:manufacturer>
                     <sh:name>Темні кросівки</sh:name>
-                    <sh:size>41.0</sh:size>
+                    <sh:size>41</sh:size>
                     <sh:productMaterial>Замінювач кожі</sh:productMaterial>
                     <sh:model>КРС987654</sh:model>
                     <sh:article>BSE0000134567892</sh:article>
                     <sh:price currency="UAH">350.00</sh:price>
                 </sh:shoe>
-                <count>2</count>
-                <total currency="UAH">700.00</total>
-            </orderItem>
-        </orderItems>
-        <buyer id="2">
-            <email>buyer2@example.com</email>
-            <lastName>Іваненко</lastName>
-            <firstName>Іван</firstName>
-            <middleName>Іванович</middleName>
-            <telephoneNumber>+380123456780</telephoneNumber>
-        </buyer>
-        <receiver id="35">
-            <email>receiver2@example.com</email>
-            <lastName>Ковальчук</lastName>
-            <firstName>Олег</firstName>
-            <middleName>Олегович</middleName>
-            <telephoneNumber>+380987654322</telephoneNumber>
-        </receiver>
-        <status>Скасовано</status>
-    </order>
-    <order id="3" xmlns="http://stanislav.hlova/shoe-shop/orders">
-        <orderItems>
-            <orderItem id="4">
+                <tns:count>2</tns:count>
+                <tns:total currency="UAH">700.00</tns:total>
+            </tns:orderItem>
+        </tns:orderItems>
+        <tns:buyer id="2">
+            <tns:email>buyer2@example.com</tns:email>
+            <tns:lastName>Іваненко</tns:lastName>
+            <tns:firstName>Іван</tns:firstName>
+            <tns:middleName>Іванович</tns:middleName>
+            <tns:telephoneNumber>+380123456780</tns:telephoneNumber>
+        </tns:buyer>
+        <tns:receiver id="35">
+            <tns:email>receiver2@example.com</tns:email>
+            <tns:lastName>Ковальчук</tns:lastName>
+            <tns:firstName>Олег</tns:firstName>
+            <tns:middleName>Олегович</tns:middleName>
+            <tns:telephoneNumber>+380987654322</tns:telephoneNumber>
+        </tns:receiver>
+        <tns:status>Скасовано</tns:status>
+    </tns:order>
+    <tns:order id="3">
+        <tns:orderItems>
+            <tns:orderItem id="4">
                 <sh:shoe id="4">
                     <sh:manufacturer id="3">
                         <sh:name>Одеська фабрика взуття</sh:name>
                         <sh:address>Одеса, вул. Приморська, 5</sh:address>
                     </sh:manufacturer>
                     <sh:name>Спортивні кросівки</sh:name>
-                    <sh:size>42.0</sh:size>
+                    <sh:size>42</sh:size>
                     <sh:productMaterial>Тканина</sh:productMaterial>
                     <sh:model>СПК876543</sh:model>
                     <sh:article>BSE0000134567893</sh:article>
                     <sh:price currency="UAH">500.00</sh:price>
                 </sh:shoe>
-                <count>4</count>
-                <total currency="UAH">2000.00</total>
-            </orderItem>
-        </orderItems>
-        <buyer id="3">
-            <email>buyer3@example.com</email>
-            <lastName>Шевченко</lastName>
-            <firstName>Тарас</firstName>
-            <middleName>Григорович</middleName>
-            <telephoneNumber>+380123456781</telephoneNumber>
-        </buyer>
-        <receiver id="36">
-            <email>receiver3@example.com</email>
-            <lastName>Сидоренко</lastName>
-            <firstName>Оксана</firstName>
-            <middleName>Сергіївна</middleName>
-            <telephoneNumber>+380987654323</telephoneNumber>
-        </receiver>
-        <delivery>
-            <status>Повертається</status>
-            <delivery-service>ТОВ "Нова пошта"</delivery-service>
-            <address>м. Вінниця, вул. Соборна, 20</address>
-            <departmentNumber>10-А</departmentNumber>
-        </delivery>
-        <status>На доставці</status>
-    </order>
-    <order id="4" xmlns="http://stanislav.hlova/shoe-shop/orders">
-        <orderItems>
-            <orderItem id="5">
+                <tns:count>4</tns:count>
+                <tns:total currency="UAH">2000.00</tns:total>
+            </tns:orderItem>
+        </tns:orderItems>
+        <tns:buyer id="3">
+            <tns:email>buyer3@example.com</tns:email>
+            <tns:lastName>Шевченко</tns:lastName>
+            <tns:firstName>Тарас</tns:firstName>
+            <tns:middleName>Григорович</tns:middleName>
+            <tns:telephoneNumber>+380123456781</tns:telephoneNumber>
+        </tns:buyer>
+        <tns:receiver id="36">
+            <tns:email>receiver3@example.com</tns:email>
+            <tns:lastName>Сидоренко</tns:lastName>
+            <tns:firstName>Оксана</tns:firstName>
+            <tns:middleName>Сергіївна</tns:middleName>
+            <tns:telephoneNumber>+380987654323</tns:telephoneNumber>
+        </tns:receiver>
+        <tns:delivery>
+            <tns:address>м. Вінниця, вул. Соборна, 20</tns:address>
+            <tns:departmentNumber>10-А</tns:departmentNumber>
+            <tns:delivery-service>ТОВ "Нова пошта"</tns:delivery-service>
+            <tns:status>Повертається</tns:status>
+        </tns:delivery>
+        <tns:status>На доставці</tns:status>
+    </tns:order>
+    <tns:order id="4">
+        <tns:orderItems>
+            <tns:orderItem id="5">
                 <sh:shoe id="5">
                     <sh:manufacturer id="4">
                         <sh:name>Дніпровська фабрика взуття</sh:name>
                         <sh:address>Дніпро, вул. Дзержинського, 8</sh:address>
                     </sh:manufacturer>
                     <sh:name>Літні сандалі</sh:name>
-                    <sh:size>39.0</sh:size>
+                    <sh:size>39</sh:size>
                     <sh:productMaterial>Замінювач кожі</sh:productMaterial>
                     <sh:model>СДЛ543216</sh:model>
                     <sh:article>BSE0000134567894</sh:article>
                     <sh:price currency="UAH">300.00</sh:price>
                 </sh:shoe>
-                <count>1</count>
-                <total currency="UAH">300.00</total>
-            </orderItem>
-            <orderItem id="6">
+                <tns:count>1</tns:count>
+                <tns:total currency="UAH">300.00</tns:total>
+            </tns:orderItem>
+            <tns:orderItem id="6">
                 <sh:shoe id="6">
                     <sh:manufacturer id="4">
                         <sh:name>Дніпровська фабрика взуття</sh:name>
                         <sh:address>Дніпро, вул. Дзержинського, 8</sh:address>
                     </sh:manufacturer>
                     <sh:name>Спортивні кросівки</sh:name>
-                    <sh:size>43.0</sh:size>
+                    <sh:size>43</sh:size>
                     <sh:productMaterial>Натуральна шкіра</sh:productMaterial>
                     <sh:model>КРС321654</sh:model>
                     <sh:article>BSE0000134567895</sh:article>
                     <sh:price currency="UAH">650.00</sh:price>
                 </sh:shoe>
-                <count>2</count>
-                <total currency="UAH">1300.00</total>
-            </orderItem>
-        </orderItems>
-        <buyer id="4">
-            <email>buyer4@example.com</email>
-            <lastName>Коваленко</lastName>
-            <firstName>Юрій</firstName>
-            <middleName>Олександрович</middleName>
-            <telephoneNumber>+380123456782</telephoneNumber>
-        </buyer>
-        <receiver id="37">
-            <email>receiver4@example.com</email>
-            <lastName>Ткаченко</lastName>
-            <firstName>Наталя</firstName>
-            <middleName>Валеріївна</middleName>
-            <telephoneNumber>+380987654324</telephoneNumber>
-        </receiver>
-        <delivery>
-            <status>Доставлено</status>
-            <delivery-service>ТОВ "Укрпошта"</delivery-service>
-            <address>м. Запоріжжя, вул. Запорізька, 12</address>
-            <departmentNumber>5-А</departmentNumber>
-        </delivery>
-        <status>Виконано</status>
-    </order>
-    <order id="5" xmlns="http://stanislav.hlova/shoe-shop/orders">
-        <orderItems>
-            <orderItem id="7">
+                <tns:count>2</tns:count>
+                <tns:total currency="UAH">1300.00</tns:total>
+            </tns:orderItem>
+        </tns:orderItems>
+        <tns:buyer id="4">
+            <tns:email>buyer4@example.com</tns:email>
+            <tns:lastName>Коваленко</tns:lastName>
+            <tns:firstName>Юрій</tns:firstName>
+            <tns:middleName>Олександрович</tns:middleName>
+            <tns:telephoneNumber>+380123456782</tns:telephoneNumber>
+        </tns:buyer>
+        <tns:receiver id="37">
+            <tns:email>receiver4@example.com</tns:email>
+            <tns:lastName>Ткаченко</tns:lastName>
+            <tns:firstName>Наталя</tns:firstName>
+            <tns:middleName>Валеріївна</tns:middleName>
+            <tns:telephoneNumber>+380987654324</tns:telephoneNumber>
+        </tns:receiver>
+        <tns:delivery>
+            <tns:address>м. Запоріжжя, вул. Запорізька, 12</tns:address>
+            <tns:departmentNumber>5-А</tns:departmentNumber>
+            <tns:delivery-service>ТОВ "Укрпошта"</tns:delivery-service>
+            <tns:status>Доставлено</tns:status>
+        </tns:delivery>
+        <tns:status>Виконано</tns:status>
+    </tns:order>
+    <tns:order id="5">
+        <tns:orderItems>
+            <tns:orderItem id="7">
                 <sh:shoe id="7">
                     <sh:manufacturer id="5">
                         <sh:name>Харківська фабрика взуття</sh:name>
                         <sh:address>Харків, вул. Сумська, 15</sh:address>
                     </sh:manufacturer>
                     <sh:name>Зимові черевики</sh:name>
-                    <sh:size>44.0</sh:size>
+                    <sh:size>44</sh:size>
                     <sh:productMaterial>Замінювач шкіри</sh:productMaterial>
                     <sh:model>ЗЧР654321</sh:model>
                     <sh:article>BSE0000134567896</sh:article>
                     <sh:price currency="UAH">800.00</sh:price>
                 </sh:shoe>
-                <count>1</count>
-                <total currency="UAH">800.00</total>
-            </orderItem>
-        </orderItems>
-        <buyer id="5">
-            <email>buyer5@example.com</email>
-            <lastName>Мельник</lastName>
-            <firstName>Андрій</firstName>
-            <middleName>Володимирович</middleName>
-            <telephoneNumber>+380123456783</telephoneNumber>
-        </buyer>
-        <receiver id="38">
-            <email>receiver5@example.com</email>
-            <lastName>Гнатенко</lastName>
-            <firstName>Сергій</firstName>
-            <middleName>Сергійович</middleName>
-            <telephoneNumber>+380987654325</telephoneNumber>
-        </receiver>
-        <delivery>
-            <status>Пакується</status>
-            <delivery-service>ТОВ "Нова пошта"</delivery-service>
-            <address>м. Чернігів, вул. Козацька, 50</address>
-            <departmentNumber>20-А</departmentNumber>
-        </delivery>
-        <status>В обробці</status>
-    </order>
+                <tns:count>1</tns:count>
+                <tns:total currency="UAH">800.00</tns:total>
+            </tns:orderItem>
+        </tns:orderItems>
+        <tns:buyer id="5">
+            <tns:email>buyer5@example.com</tns:email>
+            <tns:lastName>Мельник</tns:lastName>
+            <tns:firstName>Андрій</tns:firstName>
+            <tns:middleName>Володимирович</tns:middleName>
+            <tns:telephoneNumber>+380123456783</tns:telephoneNumber>
+        </tns:buyer>
+        <tns:receiver id="38">
+            <tns:email>receiver5@example.com</tns:email>
+            <tns:lastName>Гнатенко</tns:lastName>
+            <tns:firstName>Сергій</tns:firstName>
+            <tns:middleName>Сергійович</tns:middleName>
+            <tns:telephoneNumber>+380987654325</tns:telephoneNumber>
+        </tns:receiver>
+        <tns:delivery>
+            <tns:address>м. Чернігів, вул. Козацька, 50</tns:address>
+            <tns:departmentNumber>20-А</tns:departmentNumber>
+            <tns:delivery-service>ТОВ "Нова пошта"</tns:delivery-service>
+            <tns:status>Пакується</tns:status>
+        </tns:delivery>
+        <tns:status>В обробці</tns:status>
+    </tns:order>
 </tns:orders>

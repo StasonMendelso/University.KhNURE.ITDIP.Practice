@@ -23,7 +23,7 @@ import java.util.Set;
 public class SecurityHandler implements SOAPHandler<SOAPMessageContext> {
     private static final String SERVER_TOKEN_EXPIRED_AT_NAME = "tokenExpiresAt";
     private final Logger logger = LoggerFactory.getLogger(SecurityHandler.class);
-    private static final String CLIENT_TOKEN = "baseTokenValue";
+    private static final String CLIENT_TOKEN = "fghdfghncvb";
     private final JAXBContext jaxb;
     private final ObjectFactory factory;
 
