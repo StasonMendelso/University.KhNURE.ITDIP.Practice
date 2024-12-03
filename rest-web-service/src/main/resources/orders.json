@@ -3,7 +3,7 @@
     "orderItem" : [ {
       "shoe" : {
         "manufacturer" : {
-          "name" : "Manufacturer 1",
+          "name" : "Manufacturer 176970",
           "address" : "Address 1",
           "id" : 81
         },
@@ -87,6 +87,334 @@
     } ]
   },
   "buyer" : {
+    "email" : "Updbuyer72@example.com",
+    "lastName" : "BuyerLast19",
+    "firstName" : "BuyerFirst76",
+    "middleName" : "BuyerMiddle79",
+    "telephoneNumber" : "+38039653673",
+    "id" : 14
+  },
+  "receiver" : {
+    "email" : "Updreceiver69@example.com",
+    "lastName" : "ReceiverLast16",
+    "firstName" : "ReceiverFirst24",
+    "middleName" : "ReceiverMiddle69",
+    "telephoneNumber" : "+38036782804",
+    "id" : 20
+  },
+  "delivery" : {
+    "id" : 0,
+    "address" : "sdf",
+    "departmentNumber" : "23",
+    "status" : "Доставлено",
+    "deliveryService" : "werweqwersdf"
+  },
+  "status" : "Відхилено",
+  "id" : 2
+}, {
+  "orderItems" : {
+    "orderItem" : [ {
+      "shoe" : {
+        "manufacturer" : {
+          "name" : "Виробник1",
+          "address" : "Адреса 1",
+          "id" : 0
+        },
+        "name" : "Взуття1",
+        "size" : 37,
+        "productMaterial" : "Матеріал 1",
+        "model" : "ВПК-342",
+        "article" : "Артикуль1",
+        "price" : {
+          "value" : 300,
+          "currency" : "UAH"
+        },
+        "id" : 0
+      },
+      "count" : {
+        "value" : 2
+      },
+      "discount" : {
+        "value" : 0,
+        "currency" : "UAH"
+      },
+      "total" : {
+        "value" : 600,
+        "currency" : "UAH"
+      },
+      "id" : 0
+    } ]
+  },
+  "buyer" : {
+    "email" : "",
+    "lastName" : "",
+    "firstName" : "",
+    "middleName" : "",
+    "telephoneNumber" : "",
+    "id" : null
+  },
+  "receiver" : {
+    "email" : "",
+    "lastName" : "",
+    "firstName" : "",
+    "middleName" : "",
+    "telephoneNumber" : "",
+    "id" : null
+  },
+  "delivery" : null,
+  "status" : "Очікує розгляд",
+  "id" : 24
+}, {
+  "orderItems" : {
+    "orderItem" : [ {
+      "shoe" : {
+        "manufacturer" : {
+          "name" : "",
+          "address" : "",
+          "id" : 0
+        },
+        "name" : "",
+        "size" : 0,
+        "productMaterial" : "",
+        "model" : "",
+        "article" : "",
+        "price" : {
+          "value" : 300,
+          "currency" : "UAH"
+        },
+        "id" : 0
+      },
+      "count" : {
+        "value" : 2
+      },
+      "discount" : {
+        "value" : 50,
+        "currency" : "UAH"
+      },
+      "total" : {
+        "value" : 550,
+        "currency" : "UAH"
+      },
+      "id" : 0
+    } ]
+  },
+  "buyer" : {
+    "email" : "",
+    "lastName" : "",
+    "firstName" : "",
+    "middleName" : "",
+    "telephoneNumber" : "",
+    "id" : null
+  },
+  "receiver" : {
+    "email" : "",
+    "lastName" : "",
+    "firstName" : "",
+    "middleName" : "",
+    "telephoneNumber" : "",
+    "id" : null
+  },
+  "delivery" : null,
+  "status" : "Очікує розгляд",
+  "id" : 25
+}, {
+  "orderItems" : {
+    "orderItem" : [ {
+      "shoe" : {
+        "manufacturer" : {
+          "name" : "",
+          "address" : "",
+          "id" : 0
+        },
+        "name" : "",
+        "size" : 0,
+        "productMaterial" : "",
+        "model" : "",
+        "article" : "",
+        "price" : {
+          "value" : 300,
+          "currency" : "UAH"
+        },
+        "id" : 0
+      },
+      "count" : {
+        "value" : 2
+      },
+      "discount" : {
+        "value" : 50,
+        "currency" : "UAH"
+      },
+      "total" : {
+        "value" : 550,
+        "currency" : "UAH"
+      },
+      "id" : 0
+    }, {
+      "shoe" : {
+        "manufacturer" : {
+          "name" : "",
+          "address" : "",
+          "id" : 0
+        },
+        "name" : "",
+        "size" : 0,
+        "productMaterial" : "",
+        "model" : "",
+        "article" : "",
+        "price" : {
+          "value" : 100,
+          "currency" : "UAH"
+        },
+        "id" : 0
+      },
+      "count" : {
+        "value" : 1
+      },
+      "discount" : {
+        "value" : 0,
+        "currency" : "UAH"
+      },
+      "total" : {
+        "value" : 100,
+        "currency" : "UAH"
+      },
+      "id" : 0
+    } ]
+  },
+  "buyer" : {
+    "email" : "",
+    "lastName" : "",
+    "firstName" : "",
+    "middleName" : "",
+    "telephoneNumber" : "",
+    "id" : null
+  },
+  "receiver" : {
+    "email" : "",
+    "lastName" : "",
+    "firstName" : "",
+    "middleName" : "",
+    "telephoneNumber" : "",
+    "id" : null
+  },
+  "delivery" : null,
+  "status" : "Очікує розгляд",
+  "id" : 26
+}, {
+  "orderItems" : {
+    "orderItem" : [ {
+      "shoe" : {
+        "manufacturer" : {
+          "name" : "",
+          "address" : "",
+          "id" : null
+        },
+        "name" : "",
+        "size" : 0,
+        "productMaterial" : "",
+        "model" : "",
+        "article" : "",
+        "price" : {
+          "value" : 0,
+          "currency" : "UAH"
+        },
+        "id" : null
+      },
+      "count" : {
+        "value" : 1
+      },
+      "discount" : {
+        "value" : 0,
+        "currency" : "UAH"
+      },
+      "total" : {
+        "value" : 0,
+        "currency" : "UAH"
+      },
+      "id" : null
+    } ]
+  },
+  "buyer" : {
+    "email" : "",
+    "lastName" : "",
+    "firstName" : "",
+    "middleName" : "",
+    "telephoneNumber" : "",
+    "id" : 0
+  },
+  "receiver" : {
+    "email" : "",
+    "lastName" : "",
+    "firstName" : "",
+    "middleName" : "",
+    "telephoneNumber" : "",
+    "id" : 0
+  },
+  "delivery" : null,
+  "status" : "Очікує розгляд",
+  "id" : 12
+}, {
+  "orderItems" : {
+    "orderItem" : [ {
+      "shoe" : {
+        "manufacturer" : {
+          "name" : "Manufacturer 1",
+          "address" : "Address 1",
+          "id" : 81
+        },
+        "name" : "Random Shoe 1",
+        "size" : 37,
+        "productMaterial" : "Material 1",
+        "model" : "Model58690",
+        "article" : "ART4027",
+        "price" : {
+          "value" : 523.41,
+          "currency" : "UAH"
+        },
+        "id" : 297
+      },
+      "count" : {
+        "value" : 2
+      },
+      "discount" : null,
+      "total" : {
+        "value" : 1046.82,
+        "currency" : "UAH"
+      },
+      "id" : 845
+    }, {
+      "shoe" : {
+        "manufacturer" : {
+          "name" : "Manufacturer 2",
+          "address" : "Address 2",
+          "id" : 70
+        },
+        "name" : "Random Shoe 2",
+        "size" : 41,
+        "productMaterial" : "Material 2",
+        "model" : "Model19899",
+        "article" : "ART78112",
+        "price" : {
+          "value" : 480.61,
+          "currency" : "UAH"
+        },
+        "id" : 882
+      },
+      "count" : {
+        "value" : 1
+      },
+      "discount" : {
+        "value" : null,
+        "currency" : "UAH"
+      },
+      "total" : {
+        "value" : 480.61,
+        "currency" : "UAH"
+      },
+      "id" : 876
+    } ]
+  },
+  "buyer" : {
     "email" : "buyer72@example.com",
     "lastName" : "BuyerLast19",
     "firstName" : "BuyerFirst76",
@@ -102,7 +430,13 @@
     "telephoneNumber" : "+38036782804",
     "id" : 20
   },
-  "delivery" : null,
-  "status" : "В обробці",
-  "id" : 1
+  "delivery" : {
+    "id" : 0,
+    "address" : "sdf",
+    "departmentNumber" : "23",
+    "status" : "Доставлено",
+    "deliveryService" : "werweqwersdf"
+  },
+  "status" : "Відхилено",
+  "id" : 13
 } ]

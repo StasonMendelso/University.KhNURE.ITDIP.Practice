@@ -1,0 +1,21 @@
+.myBtn{
+    padding: 5px 15px;
+    color: teal;
+    font-size: 14px;
+    background: transparent;
+    border: 1px solid teal;
+    cursor: pointer;
+}
+.myBtn:hover{
+    background: aquamarine;
+    transition-duration: 0.2s;
+}
+.myDelButton{
+    border: 1px solid orangered;
+    color: orangered;
+
+}
+.myDelButton:hover{
+    background: darkorange;
+    color: black;
+}

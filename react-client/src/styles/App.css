@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#root{
+    font-family: "Tahoma";
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    font-family: "Tahoma";
+    color: teal;
+    font-weight: bold;
+}
+.App{
+    padding: 0 10px;
+    max-width: 1600px;
+}
+
+.page__wrapper{
+    margin-top: 50px;
+    display: flex;
+}
+
+.page{
+    padding: 10px;
+    border: 1px solid teal;
+    cursor: pointer;
+}
+.page__current{
+    border: 2px solid orange;
+    font-weight: bold;
+}
+
+.navbar{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    background: #f1f1f1;
+}
+.navbar_links{
+    margin: auto;
+}
+.navbar_links a{
+    margin: 0 10px;
+    text-decoration: none;
+    font-family: "Tahoma";
+    color: teal;
+    font-weight: bold;
+}
+.input-group-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5px 0;
+}
+
+

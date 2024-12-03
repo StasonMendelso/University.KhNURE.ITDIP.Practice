@@ -1,0 +1,78 @@
+{
+  "buyer": {
+    "firstName": "",
+    "lastName": "",
+    "middleName": "",
+    "email": "",
+    "telephoneNumber": ""
+  },
+  "receiver": {
+    "firstName": "",
+    "lastName": "",
+    "middleName": "",
+    "email": "",
+    "telephoneNumber": ""
+  },
+  "orderItems": {
+    "orderItem": [
+      {
+        "total": {
+          "value": 0,
+          "currency": "UAH"
+        },
+        "discount": {
+          "value": 0,
+          "currency": "UAH"
+        },
+        "count": {
+          "value": "5",
+          "count": "1"
+        },
+        "shoe": {
+          "manufacturer": {
+            "name": "fg",
+            "address": "werw",
+            "manufacturerName": "g",
+            "manufacturerAddress": "f"
+          },
+          "name": "hfgh",
+          "article": "Артикуль2",
+          "model": "ВПК-342554",
+          "price": "234",
+          "size": "34",
+          "productMaterial": "Матеріал 2",
+          "manufacturerName": "t"
+        }
+      },
+      {
+        "total": {
+          "value": 0,
+          "currency": "UAH"
+        },
+        "discount": {
+          "value": 0,
+          "currency": "UAH"
+        },
+        "count": {
+          "value": 0
+        },
+        "shoe": {
+          "manufacturer": {
+            "name": "",
+            "address": ""
+          },
+          "name": "",
+          "article": "",
+          "model": "",
+          "price": {
+            "value": 0,
+            "currency": "UAH"
+          },
+          "size": 0,
+          "productMaterial": ""
+        }
+      }
+    ]
+  },
+  "status": "Очікує розгляд"
+}

@@ -1,0 +1,9 @@
+.ordersContainer{
+    width: 100%;
+}
+.orderTable{
+    width: 100%;
+}
+.orderTableContainer{
+    overflow: auto;
+}

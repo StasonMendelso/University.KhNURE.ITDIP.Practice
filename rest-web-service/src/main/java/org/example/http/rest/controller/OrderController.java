@@ -3,6 +3,8 @@ package org.example.http.rest.controller;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import org.example.entity.orders.Order;
+import org.example.entity.orders.OrderItem;
+import org.example.entity.orders.OrderItems;
 import org.example.http.rest.ApplicationConfiguration;
 import org.example.http.rest.exception.OrderNotFound;
 import org.example.http.rest.locator.OrderLocator;
@@ -11,6 +13,7 @@ import org.example.repository.OrderRepository;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.List;
+import java.util.stream.Stream;
 
 import static org.example.http.rest.Constants.ORDER_CONTROLLER_PATH;
 
@@ -28,10 +31,10 @@ public class OrderController {
     @GET
     @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
     public List<Order> getOrders(@QueryParam("minTotal") Double minTotal, @QueryParam("maxTotal") Double maxTotal) {
-        if(minTotal != null && maxTotal != null){
+        if (minTotal != null && maxTotal != null) {
             return orderRepository.findAll().stream()
                     .filter(order -> {
-                        if (order.getOrderItems() == null){
+                        if (order.getOrderItems() == null) {
                             return false;
                         }
                         double orderTotal = order.getOrderItems().getOrderItem().stream()
@@ -44,9 +47,9 @@ public class OrderController {
     }
 
     @Path("/{id:\\d+}")
-    public OrderLocator orderLocator(@PathParam("id") long id){
+    public OrderLocator orderLocator(@PathParam("id") long id) {
         Order order = orderRepository.findById(BigInteger.valueOf(id));
-        if (order == null){
+        if (order == null) {
             throw new OrderNotFound(id);
         }
         return new OrderLocator(order);
@@ -57,6 +60,17 @@ public class OrderController {
     @Consumes({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
     @Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
     public Order createOrder(Order order) {
+        Stream<OrderItem> stream = order.getOrderItems().getOrderItem().stream()
+                .map(orderItem -> {
+                    BigDecimal total = orderItem.getShoe().getPrice().getValue().multiply(BigDecimal.valueOf(orderItem.getCount().getValue())).subtract(orderItem.getDiscount().getValue());
+                    orderItem.getTotal()
+                            .setValue(total);
+                    return orderItem;
+                });
+        OrderItems value = new OrderItems();
+        value.setOrderItem(stream.toList());
+        order.setOrderItems(value);
+
         return orderRepository.add(order);
     }
 
